@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Kaloyan Bahnev — Private Chef</title>
+  <meta name="description" content="Kaloyan Bahnev — Private Chef in Moscow & Europe. Modern European & New Russian cuisine. Private dining, VIP events, luxury catering." />
+
+  <meta property="og:title" content="Kaloyan Bahnev — Private Chef" />
+  <meta property="og:description" content="Private dining • VIP events • Modern European & New Russian cuisine" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://chefbahnev.com/" />
+  <meta property="og:image" content="https://chefbahnev.com/images/ph-1.jpg" />
+
+  <link rel="canonical" href="https://chefbahnev.com/" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+</head>
+
+<body>
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="Home">
+      <span class="brand__mono">KB</span>
+      <span class="brand__text">Kaloyan Bahnev</span>
+    </a>
+
+    <nav class="nav__links">
+      <a href="#about" data-i18n="nav_about">Обо мне</a>
+      <a href="#philosophy" data-i18n="nav_philosophy">Философия</a>
+      <a href="#services" data-i18n="nav_services">Услуги</a>
+      <a href="#gallery" data-i18n="nav_gallery">Галерея</a>
+      <a href="#contact" class="btn btn--ghost" data-i18n="nav_contact">Запросить дату</a>
+      <button id="langBtn" class="lang" type="button" aria-label="Switch language">EN</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero__bg"></div>
+
+      <div class="hero__content" data-reveal>
+        <p class="kicker" data-i18n="kicker">Private Chef • Moscow • Europe</p>
+
+        <h1 class="hero__title" data-i18n="title">
+          Modern European<br/> & New Russian Cuisine
+        </h1>
+
+        <p class="hero__subtitle" data-i18n="subtitle">
+          Частные ужины, VIP-мероприятия и luxury catering. Меню — под ваш стиль жизни.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#contact" data-i18n="cta">Запросить дату</a>
+          <a class="btn btn--link" href="#gallery" data-i18n="cta2">Смотреть портфолио</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container grid2">
+        <div data-reveal>
+          <h2 class="h2" data-i18n="about_h">Обо мне</h2>
+
+          <p class="lead" data-i18n="about_p1">
+            Я — шеф-повар с международным опытом (Италия, Испания, Греция, Бразилия, Кипр) и 16+ лет в профессии.
+            Последние годы — fine dining и запуск ресторанов в Москве.
+          </p>
+
+          <p class="text" data-i18n="about_p2">
+            Сейчас я фокусируюсь на формате Private Chef: частные ужины, семейное сопровождение,
+            загородные мероприятия и VIP catering — на уровне без компромиссов по продукту и подаче.
+          </p>
+        </div>
+
+        <div class="aboutSide" data-reveal>
+          <div class="aboutPhoto" aria-label="Kaloyan Bahnev portrait">
+            <div class="aboutPhoto__caption">
+              <p class="aboutPhoto__name">Kaloyan Bahnev</p>
+              <p class="aboutPhoto__role">Private Chef • Fine Dining</p>
+            </div>
+          </div>
+
+          <div class="aboutHighlights" aria-label="Highlights">
+            <p class="aboutHighlights__title">Highlights</p>
+
+            <div class="aboutHighlights__grid">
+              <div class="hl">
+                <span class="hl__k">Location</span>
+                <span class="hl__v">Moscow • Europe</span>
+              </div>
+
+              <div class="hl">
+                <span class="hl__k">Format</span>
+                <span class="hl__v">Private Dining • VIP Events</span>
+              </div>
+
+              <div class="hl">
+                <span class="hl__k">Cuisine</span>
+                <span class="hl__v">Modern European • New Russian</span>
+              </div>
+
+              <div class="hl">
+                <span class="hl__k">Languages</span>
+                <span class="hl__v">RU • EN • FR • BG</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="philosophy" class="section section--alt">
+      <div class="container">
+        <h2 class="h2" data-i18n="phil_h" data-reveal>Философия</h2>
+
+        <div class="philosophyGrid">
+          <article class="phCard" data-reveal>
+            <div class="phMedia" data-parallax="0.018">
+              <img src="images/ph-1.jpg" alt="Русский продукт — европейская техника" loading="lazy">
+            </div>
+            <div class="phBody">
+              <h3 class="phTitle" data-i18n="phil1h">Русский продукт — европейская техника</h3>
+              <div class="phLine"></div>
+              <p class="phText" data-i18n="phil1p">
+                Северные ягоды, дикая рыба, сахалинские морепродукты, камчатский краб и русская дичь —
+                в современном прочтении с точностью средиземноморской школы.
+              </p>
+            </div>
+          </article>
+
+          <article class="phCard" data-reveal>
+            <div class="phMedia" data-parallax="0.02">
+              <img src="images/ph-2.jpg" alt="Вдохновение New Nordic" loading="lazy">
+            </div>
+            <div class="phBody">
+              <h3 class="phTitle" data-i18n="phil2h">Вдохновение New Nordic</h3>
+              <div class="phLine"></div>
+              <p class="phText" data-i18n="phil2p">
+                Чистые вкусы, сезонность, уважение к сырью, текстуры и деликатная ферментация —
+                эстетика, близкая к New Nordic, но с русским характером.
+              </p>
+            </div>
+          </article>
+
+          <article class="phCard" data-reveal>
+            <div class="phMedia" data-parallax="0.017">
+              <img src="images/ph-3.jpg" alt="Меню под ваш стиль жизни" loading="lazy">
+            </div>
+            <div class="phBody">
+              <h3 class="phTitle" data-i18n="phil3h">Меню под ваш стиль жизни</h3>
+              <div class="phLine"></div>
+              <p class="phText" data-i18n="phil3p">
+                Я создаю опыт, а не просто блюда: сценарий вечера, темп подачи, сервировка и детали.
+                Всё — персонально.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SERVICES (with big images) ===================== -->
+    <section id="services" class="section">
+      <div class="container">
+        <h2 class="h2" data-i18n="srv_h" data-reveal>Услуги</h2>
+
+        <div class="grid3 servicesGrid">
+          <!-- 1 -->
+          <article class="service card" data-reveal>
+            <div class="service__media">
+              <!-- ВАЖНО: поставь сюда фото стола/сервировки -->
+              <img src="images/srv-dining.jpg" alt="Private Dining" loading="lazy">
+              <div class="service__veil"></div>
+            </div>
+
+            <div class="service__body">
+              <h3 class="h3" data-i18n="srv1h">Private Dining</h3>
+              <p class="text" data-i18n="srv1p">Камерные ужины дома или за городом. Индивидуальное меню, закупка, подача.</p>
+              <ul class="list">
+                <li data-i18n="srv1l1">Меню под запрос</li>
+                <li data-i18n="srv1l2">Премиальные продукты</li>
+                <li data-i18n="srv1l3">Сервис “под ключ”</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- 2 -->
+          <article class="service card" data-reveal>
+            <div class="service__media">
+              <!-- ВАЖНО: фото процесса/ты на кухне -->
+              <img src="images/srv-family.jpg" alt="Family Chef" loading="lazy">
+              <div class="service__veil"></div>
+            </div>
+
+            <div class="service__body">
+              <h3 class="h3" data-i18n="srv2h">Family Chef</h3>
+              <p class="text" data-i18n="srv2p">Постоянное сопровождение семьи: рацион, закупки, процессы на кухне.</p>
+              <ul class="list">
+                <li data-i18n="srv2l1">Weekly planning</li>
+                <li data-i18n="srv2l2">Постановка кухни</li>
+                <li data-i18n="srv2l3">Учет предпочтений</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- 3 -->
+          <article class="service card" data-reveal>
+            <div class="service__media">
+              <!-- ВАЖНО: фото сетапа/ивента без лиц -->
+              <img src="images/srv-events.jpg" alt="VIP Events & Catering" loading="lazy">
+              <div class="service__veil"></div>
+            </div>
+
+            <div class="service__body">
+              <h3 class="h3" data-i18n="srv3h">VIP Events & Catering</h3>
+              <p class="text" data-i18n="srv3p">Дни рождения, частные мероприятия, luxury catering с командой.</p>
+              <ul class="list">
+                <li data-i18n="srv3l1">Fine dining формат</li>
+                <li data-i18n="srv3l2">Загород и выезд</li>
+                <li data-i18n="srv3l3">Event-координация</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+<!-- ===================== GALLERY (categories cards + lightbox) ===================== -->
+<section id="gallery" class="section section--alt">
+  <div class="container">
+
+    <!-- Head -->
+    <div class="galleryHead" data-reveal>
+      <div>
+        <h2 class="h2" data-i18n="gal_h">Галерея</h2>
+        <p class="text" data-i18n="gal_p">
+          Selected works — private dining, family chef, VIP events.
+        </p>
+      </div>
+    </div>
+
+    <!-- Categories (UNDER the title) -->
+    <div class="galleryCats" aria-label="Gallery categories">
+      <button class="galCat" type="button" data-key="dining" data-reveal>
+        <img src="images/g/cat-dining.jpg" alt="Private Dining" loading="lazy">
+        <div class="galCat__veil"></div>
+        <div class="galCat__body">
+          <h3 class="galCat__h" data-i18n="srv1h">Private Dining</h3>
+          <p class="galCat__p" data-i18n="srv1p">Камерные ужины…</p>
+        </div>
+      </button>
+
+      <button class="galCat" type="button" data-key="family" data-reveal>
+        <img src="images/g/cat-family.jpg" alt="Family Chef" loading="lazy">
+        <div class="galCat__veil"></div>
+        <div class="galCat__body">
+          <h3 class="galCat__h" data-i18n="srv2h">Family Chef</h3>
+          <p class="galCat__p" data-i18n="srv2p">Постоянное сопровождение…</p>
+        </div>
+      </button>
+
+      <button class="galCat" type="button" data-key="vip" data-reveal>
+        <img src="images/g/cat-vip.jpg" alt="VIP Events & Catering" loading="lazy">
+        <div class="galCat__veil"></div>
+        <div class="galCat__body">
+          <h3 class="galCat__h" data-i18n="srv3h">VIP Events & Catering</h3>
+          <p class="galCat__p" data-i18n="srv3p">Дни рождения…</p>
+        </div>
+      </button>
+    </div>
+
+    <!-- Grid (filtered by JS) -->
+    <div class="galleryViewer" data-reveal>
+
+      <div class="galleryMain">
+        <img class="galleryMain__img" src="images/g/dining-1.jpg" alt="">
+        <div class="galleryMain__cap"></div>
+      </div>
+
+      <div class="galleryStrip" aria-label="Gallery thumbnails">
+
+        <!-- dining -->
+        <button class="galThumb is-active" data-cat="dining" data-full="images/g/dining-1.jpg" data-cap="Private Dining">
+          <img src="images/g/dining-1.jpg" alt="">
+        </button>
+        <button class="galThumb" data-cat="dining" data-full="images/g/dining-2.jpg" data-cap="Private Dining">
+          <img src="images/g/dining-2.jpg" alt="">
+        </button>
+        <button class="galThumb" data-cat="dining" data-full="images/g/dining-3.jpg" data-cap="Private Dining">
+          <img src="images/g/dining-3.jpg" alt="">
+        </button>
+
+        <!-- family -->
+        <button class="galThumb" data-cat="family" data-full="images/g/family-1.jpg" data-cap="Family Chef">
+          <img src="images/g/family-1.jpg" alt="">
+        </button>
+        <button class="galThumb" data-cat="family" data-full="images/g/family-2.jpg" data-cap="Family Chef">
+          <img src="images/g/family-2.jpg" alt="">
+        </button>
+        <button class="galThumb" data-cat="family" data-full="images/g/family-3.jpg" data-cap="Family Chef">
+          <img src="images/g/family-3.jpg" alt="">
+        </button>
+
+        <!-- vip -->
+        <button class="galThumb" data-cat="vip" data-full="images/g/vip-1.jpg" data-cap="VIP Events & Catering">
+          <img src="images/g/vip-1.jpg" alt="">
+        </button>
+        <button class="galThumb" data-cat="vip" data-full="images/g/vip-2.jpg" data-cap="VIP Events & Catering">
+          <img src="images/g/vip-2.jpg" alt="">
+        </button>
+        <button class="galThumb" data-cat="vip" data-full="images/g/vip-3.jpg" data-cap="VIP Events & Catering">
+          <img src="images/g/vip-3.jpg" alt="">
+        </button>
+        <button class="galThumb" data-cat="vip" data-full="images/g/vip-4.jpg" data-cap="VIP Events & Catering">
+          <img src="images/g/vip-4.jpg" alt="">
+        </button>
+        <button class="galThumb" data-cat="vip" data-full="images/g/vip-5.jpg" data-cap="VIP Events & Catering">
+          <img src="images/g/vip-5.jpg" alt="">
+        </button>
+        <button class="galThumb" data-cat="vip" data-full="images/g/vip-6.jpg" data-cap="VIP Events & Catering">
+          <img src="images/g/vip-6.jpg" alt="">
+        </button>
+        <button class="galThumb" data-cat="vip" data-full="images/g/vip-7.jpg" data-cap="VIP Events & Catering">
+          <img src="images/g/vip-7.jpg" alt="">
+        </button>
+        <button class="galThumb" data-cat="vip" data-full="images/g/vip-8.jpg" data-cap="VIP Events & Catering">
+          <img src="images/g/vip-8.jpg" alt="">
+        </button>
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+    <!-- ===================== CONTACT (Concierge / Reservation) ===================== -->
+    <section id="contact" class="section contact contact--concierge">
+      <div class="container grid2">
+
+        <!-- LEFT -->
+        <div class="contactLeft card" data-reveal>
+          <h2 class="h2" data-i18n="con_h">Запросить дату</h2>
+
+          <p class="lead" data-i18n="con_p">
+            Оставьте детали — отвечу с концепцией меню и форматом обслуживания.
+          </p>
+
+          <div class="contactMeta" aria-label="Concierge details">
+            <div class="cmeta">
+              <span class="cmeta__k" data-i18n="con_m1k">Ответ</span>
+              <span class="cmeta__v" data-i18n="con_m1v">обычно 1–2 часа</span>
+            </div>
+            <div class="cmeta">
+              <span class="cmeta__k" data-i18n="con_m2k">География</span>
+              <span class="cmeta__v" data-i18n="con_m2v">Москва / Европа</span>
+            </div>
+            <div class="cmeta">
+              <span class="cmeta__k" data-i18n="con_m3k">Формат</span>
+              <span class="cmeta__v" data-i18n="con_m3v">Private Dining • Family Chef • VIP</span>
+            </div>
+          </div>
+
+          <div class="contactTrust" aria-label="Trust">
+            <p class="contactTrust__title" data-i18n="con_trust_t">Детали</p>
+            <ul class="contactTrust__list">
+              <li data-i18n="con_trust_1">Конфиденциальность</li>
+              <li data-i18n="con_trust_2">Меню под предпочтения и ограничения</li>
+              <li data-i18n="con_trust_3">Команда и сервис — при необходимости</li>
+            </ul>
+          </div>
+
+          <div class="contactActions" aria-label="Contact actions">
+            <a class="btn btn--subtle btn--wide" href="https://t.me/KaloyanPB" target="_blank" rel="noopener" data-i18n="con_tg">
+              Написать в Telegram
+            </a>
+
+            <div class="contactActions__row">
+              <a class="btn btn--subtle btn--wide" href="tel:+79057299716" data-i18n="con_call">Позвонить</a>
+              <a class="btn btn--subtle btn--wide" href="mailto:kaloyan.bahnev@gmail.com?subject=Private%20Chef%20Request" data-i18n="con_mail">Email</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT / FORM -->
+        <form class="form card form--concierge" onsubmit="return window.kbSubmit(event)" data-reveal>
+          <div class="formHead">
+            <p class="formHead__title" data-i18n="con_form_h">Запрос</p>
+            <p class="formHead__sub" data-i18n="con_form_p">Коротко заполните — дальше продолжим в Telegram.</p>
+          </div>
+
+          <!-- Step 1 -->
+          <div class="step">
+            <p class="step__k" data-i18n="con_step1">1) Дата / город / гости</p>
+
+            <div class="grid3 formGrid3">
+              <label class="field field--line field--date">
+                <span class="srOnly" data-i18n="f_date">Дата</span>
+                <span class="dateHint" data-i18n="f_date">Дата</span>
+                <input id="date" name="date" type="date" required />
+              </label>
+
+              <label class="field field--line">
+                <span class="srOnly" data-i18n="f_city">Город</span>
+                <input name="city" placeholder="Город" required />
+              </label>
+
+              <label class="field field--line">
+                <span class="srOnly" data-i18n="f_guests">Гости</span>
+                <input name="guests" type="number" min="1" step="1" placeholder="Гости" required />
+              </label>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step">
+            <p class="step__k" data-i18n="con_step2">2) Формат</p>
+
+            <input type="hidden" name="format" value="Private Dining" />
+
+            <div class="formatTiles" role="group" aria-label="Format">
+              <button class="tile is-active" type="button" data-format="Private Dining">
+                <span class="tile__h" data-i18n="chip1">Private Dining</span>
+                <span class="tile__p" data-i18n="chip1d">Камерный ужин с подачей</span>
+              </button>
+
+              <button class="tile" type="button" data-format="Family Chef">
+                <span class="tile__h" data-i18n="chip2">Family Chef</span>
+                <span class="tile__p" data-i18n="chip2d">Рацион и сопровождение</span>
+              </button>
+
+              <button class="tile" type="button" data-format="VIP Events">
+                <span class="tile__h" data-i18n="chip3">VIP Events</span>
+                <span class="tile__p" data-i18n="chip3d">Событие с командой</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step">
+            <p class="step__k" data-i18n="con_step3">3) Контакт и детали</p>
+
+            <div class="grid2 formGrid">
+              <label class="field field--line">
+                <span class="srOnly" data-i18n="f1">Имя</span>
+                <input name="name" placeholder="Имя" required />
+              </label>
+
+              <label class="field field--line">
+                <span class="srOnly" data-i18n="f2">Телефон или email</span>
+                <input name="contact" placeholder="Телефон или email" required />
+              </label>
+            </div>
+
+          </div>
+
+          <button class="btn btn--primary btn--wide" type="submit" data-i18n="send">
+            Отправить запрос в Telegram
+          </button>
+
+          <p class="fine fine--lux" data-i18n="fine">
+            Отправка откроет Telegram с уже заполненным сообщением (данные не сохраняются на сайте).
+          </p>
+        </form>
+
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__in">
+        <span>© <span id="y"></span> Kaloyan Bahnev</span>
+        <span class="sep">•</span>
+        <a href="tel:+79057299716">+7 (905) 729-97-16</a>
+        <span class="sep">•</span>
+        <a href="mailto:kaloyan.bahnev@gmail.com">kaloyan.bahnev@gmail.com</a>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" aria-hidden="true">
+    <button class="lightbox__close" type="button" aria-label="Close">✕</button>
+    <div class="lightbox__inner">
+      <img class="lightbox__img" alt="" />
+      <div class="lightbox__cap"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
