@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Kaloyan Bahnev — Private Chef</title>
-  <meta name="description" content="Kaloyan Bahnev — Private Chef in Moscow & Europe. Modern European & New Russian cuisine. Private dining, VIP events, luxury catering." />
+  <meta name="description" content="Kaloyan Bahnev — Private Chef in Moscow & Europe. Contemporary European cuisine with Russian identity. Private dining, family chef, private events. Tailored menus. Absolute discretion." /> />
 
   <meta property="og:title" content="Kaloyan Bahnev — Private Chef" />
-  <meta property="og:description" content="Private dining • VIP events • Modern European & New Russian cuisine" />
+  <meta property="og:description" content="Private dining • Family chef • Private events • Contemporary European cuisine" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://chefbahnev.com/" />
   <meta property="og:image" content="https://chefbahnev.com/images/ph-1.jpg" />
@@ -59,9 +59,9 @@
           Modern European<br/> & New Russian Cuisine
         </h1>
 
-        <p class="hero__subtitle" data-i18n="subtitle">
-          Частные ужины, VIP-мероприятия и luxury catering. Меню — под ваш стиль жизни.
-        </p>
+        <p class="hero__subtitle" data-i18n="subtitle"></p>
+
+        <p class="hero__signature" data-i18n="signature"></p>
 
         <div class="hero__cta">
           <a class="btn btn--primary" href="#contact" data-i18n="cta">Запросить дату</a>
@@ -106,7 +106,7 @@
 
               <div class="hl">
                 <span class="hl__k">Format</span>
-                <span class="hl__v">Private Dining • VIP Events</span>
+                <span class="hl__v">Private Dining • Family Chef • Private Events</span>
               </div>
 
               <div class="hl">
@@ -223,7 +223,7 @@
           <article class="service card" data-reveal>
             <div class="service__media">
               <!-- ВАЖНО: фото сетапа/ивента без лиц -->
-              <img src="images/srv-events.jpg" alt="VIP Events & Catering" loading="lazy">
+              <img src="images/srv-events.jpg" alt="Private Events" loading="lazy">
               <div class="service__veil"></div>
             </div>
 
@@ -413,6 +413,7 @@
             <p class="step__k" data-i18n="con_step1">1) Дата / город / гости</p>
 
             <div class="grid3 formGrid3">
+
               <label class="field field--line field--date">
                 <span class="srOnly" data-i18n="f_date">Дата</span>
                 <span class="dateHint" data-i18n="f_date">Дата</span>
@@ -421,13 +422,17 @@
 
               <label class="field field--line">
                 <span class="srOnly" data-i18n="f_city">Город</span>
-                <input name="city" placeholder="Город" required />
+                <input name="city" data-i18n-ph="f_city" placeholder="Город" required />
               </label>
 
               <label class="field field--line">
                 <span class="srOnly" data-i18n="f_guests">Гости</span>
-                <input name="guests" type="number" min="1" step="1" placeholder="Гости" required />
+                <input name="guests" type="number" min="1" step="1"
+                       data-i18n-ph="f_guests"
+                       placeholder="Гости"
+                       required />
               </label>
+
             </div>
           </div>
 
@@ -448,9 +453,9 @@
                 <span class="tile__p" data-i18n="chip2d">Рацион и сопровождение</span>
               </button>
 
-              <button class="tile" type="button" data-format="VIP Events">
-                <span class="tile__h" data-i18n="chip3">VIP Events</span>
-                <span class="tile__p" data-i18n="chip3d">Событие с командой</span>
+              <button class="tile" type="button" data-format="Private Events">
+                <span class="tile__h" data-i18n="chip3">Private Events</span>
+                <span class="tile__p" data-i18n="chip3d">Закрытое событие</span>
               </button>
             </div>
           </div>
@@ -462,12 +467,12 @@
             <div class="grid2 formGrid">
               <label class="field field--line">
                 <span class="srOnly" data-i18n="f1">Имя</span>
-                <input name="name" placeholder="Имя" required />
+                <input name="name" data-i18n-ph="f1" placeholder="Имя" required />
               </label>
 
               <label class="field field--line">
                 <span class="srOnly" data-i18n="f2">Телефон или email</span>
-                <input name="contact" placeholder="Телефон или email" required />
+                <input name="contact" data-i18n-ph="f2" placeholder="Телефон или email" required />
               </label>
             </div>
 
@@ -488,10 +493,6 @@
     <footer class="footer">
       <div class="container footer__in">
         <span>© <span id="y"></span> Kaloyan Bahnev</span>
-        <span class="sep">•</span>
-        <a href="tel:+79057299716">+7 (905) 729-97-16</a>
-        <span class="sep">•</span>
-        <a href="mailto:kaloyan.bahnev@gmail.com">kaloyan.bahnev@gmail.com</a>
       </div>
     </footer>
   </main>
