@@ -61,16 +61,15 @@ window.kbSubmit = (e) => {
   const msg = (fd.get("msg") || "").toString().trim();
 
   const text =
-`Private Chef Request — chefbahnev.com
+`Private Chef Inquiry — chefbahnev.com
 
-Имя: ${name}
-Контакт: ${contact}
-Дата: ${date}
-Город: ${city}
-Гости: ${guests}
-Формат: ${format || "-"}
+Name: ${name}
+Contact: ${contact}
+Date: ${date || "-"}
+City: ${city}
+Guests: ${guests}
+Format: ${format || "-"}
 
-Комментарий:
 ${msg || "-"}`;
 
   // Telegram deeplink (works on mobile + desktop with Telegram installed / web)
@@ -92,10 +91,11 @@ let lang = "ru";
 const dict = {
   ru: {
     kicker: "Private Chef • Moscow • Europe",
-    title: "Modern European<br/> & New Russian Cuisine",
-    subtitle: "Частные ужины, VIP-мероприятия и luxury catering. Меню — под ваш стиль жизни.",
+    title: "Современная европейская кухня<br/> с русской идентичностью",
+    subtitle: "",
+    signature: "Тишина вкуса. Сила деталей.",
     cta: "Запросить дату",
-    cta2: "Смотреть портфолио",
+    cta2: "Посмотреть работы",
 
     nav_about: "Обо мне",
     nav_philosophy: "Философия",
@@ -104,27 +104,27 @@ const dict = {
     nav_contact: "Запросить дату",
 
     about_h: "Обо мне",
-    about_p1: "Я — шеф-повар с международным опытом (Италия, Испания, Греция, Бразилия, Кипр) и 16+ лет в профессии. Последние годы — fine dining и запуск ресторанов в Москве.",
-    about_p2: "Сейчас я фокусируюсь на формате Private Chef: частные ужины, семейное сопровождение, загородные мероприятия и VIP catering — на уровне без компромиссов по продукту и подаче.",
+    about_p1: "Я — частный шеф-повар с международным опытом работы в Италии, Испании, Греции, Бразилии и на Кипре и более 16 лет в профессии. Работал в fine dining проектах и участвовал в запуске ресторанов в Москве.",
+    about_p2: "Сегодня я работаю в формате Private Chef: камерные гастрономические вечера, семейное сопровождение и закрытые приёмы. Индивидуальные меню. Внимание к деталям. Полная конфиденциальность.",
 
     phil_h: "Философия",
-    phil1h: "Русский продукт — европейская техника",
-    phil1p: "Северные ягоды, дикая рыба, сахалинские морепродукты, камчатский краб и русская дичь — в современном прочтении с точностью средиземноморской школы.",
+    phil1h: "Русский продукт. Европейская техника.",
+    phil1p: "Северная рыба. Дикие ягоды.<br/>Морепродукты Сахалина.<br/>Русская дичь.<br/><br/>Локальный продукт — в современном прочтении высокой кухни.",
     phil2h: "Вдохновение New Nordic",
-    phil2p: "Чистые вкусы, сезонность, уважение к сырью, текстуры и деликатная ферментация — эстетика, близкая к New Nordic, но с русским характером.",
-    phil3h: "Меню под ваш стиль жизни",
-    phil3p: "Я создаю опыт, а не просто блюда: сценарий вечера, темп подачи, сервировка и детали. Всё — персонально.",
+    phil2p: "Чистота — чистота вкуса и отсутствие лишнего.<br/>Простота — уважение к продукту.<br/>Свежесть — сезонность и локальность ингредиентов.<br/><br/>Сдержанная эстетика с русским характером.",
+    phil3h: "Персональный формат",
+    phil3p: "Каждый вечер — индивидуальный.<br/>Пространство, гости, настроение —<br/>всё учитывается в композиции меню.<br/><br/>Тишина вкуса. Внимание к деталям.",
 
     srv_h: "Услуги",
     srv1h: "Private Dining",
-    srv1p: "Камерные ужины дома или за городом. Индивидуальное меню, закупка, подача.",
+    srv1p: "Камерные ужины дома, в апартаментах или загородной резиденции. Индивидуальное меню, закупка, подача, сервис.",
     srv1l1: "Меню под запрос", srv1l2: "Премиальные продукты", srv1l3: "Сервис “под ключ”",
     srv2h: "Family Chef",
-    srv2p: "Постоянное сопровождение семьи: рацион, закупки, процессы на кухне.",
-    srv2l1: "Weekly planning", srv2l2: "Постановка кухни", srv2l3: "Учет предпочтений",
-    srv3h: "VIP Events & Catering",
-    srv3p: "Дни рождения, частные мероприятия, luxury catering с командой.",
-    srv3l1: "Fine dining формат", srv3l2: "Загород и выезд", srv3l3: "Event-координация",
+    srv2p: "Регулярное сопровождение семьи: рацион, закупки, организация кухни и процессов.",
+    srv2l1: "Weekly planning", srv2l2: "Организация кухни", srv2l3: "Предпочтения и ограничения",
+    srv3h: "Private Events",
+    srv3p: "Закрытые приёмы и частные события. Fine dining формат с командой сервиса при необходимости.",
+    srv3l1: "Fine dining формат", srv3l2: "Выездной сервис", srv3l3: "Координация сервиса",
 
     gal_h: "Галерея",
     gal_p: "Selected works — private dining, family chef, VIP events.",
@@ -145,7 +145,7 @@ const dict = {
 
     con_m1k: "Ответ",     con_m1v: "обычно 1–2 часа",
     con_m2k: "География", con_m2v: "Москва / Европа",
-    con_m3k: "Формат",    con_m3v: "Private Dining • Family Chef • VIP",
+    con_m3k: "Формат",    con_m3v: "Private Dining • Family Chef • Private Events",
 
     con_trust_t: "Детали",
     con_trust_1: "Конфиденциальность",
@@ -176,8 +176,9 @@ const dict = {
 
   en: {
     kicker: "Private Chef • Moscow • Europe",
-    title: "Modern European<br/> & New Russian Cuisine",
-    subtitle: "Private dining, VIP events and luxury catering. A menu tailored to your lifestyle.",
+    title: "Contemporary European Cuisine<br/> with Russian Identity",
+    subtitle: "",
+    signature: "Silence of flavor. Strength in detail.",
     cta: "Request a date",
     cta2: "View portfolio",
 
@@ -189,15 +190,15 @@ const dict = {
 
     about_h: "About",
     about_p1: "European-trained chef with international experience (Italy, Spain, Greece, Brazil, Cyprus) and 16+ years in the craft. In recent years — fine dining and restaurant openings in Moscow.",
-    about_p2: "Today my focus is Private Chef service: intimate dinners, family support, countryside events and VIP catering — with uncompromising product quality and presentation.",
+    about_p2: "Today I work exclusively as a Private Chef — intimate dining experiences, family culinary programs, and private events at a high-end level. Tailored menus. Refined service. Absolute discretion.",
 
     phil_h: "Philosophy",
-    phil1h: "Russian terroir, European technique",
-    phil1p: "Northern berries, wild fish, Sakhalin seafood, Kamchatka crab and game — reinterpreted with Mediterranean precision.",
-    phil2h: "New Nordic inspiration",
-    phil2p: "Clean flavors, seasonality, respect for ingredients, texture and delicate fermentation — a Nordic-inspired approach with a Russian character.",
-    phil3h: "Tailored to your lifestyle",
-    phil3p: "I design an experience — pacing, plating, service and details — fully personal.",
+    phil1h: "Russian Product. European Technique.",
+    phil1p: "Northern fish. Wild berries.<br/>Seafood from Sakhalin.<br/>Russian game.<br/><br/>Local ingredients — interpreted through contemporary haute cuisine.",
+    phil2h: "Inspired by New Nordic",
+    phil2p: "Purity — clarity of flavor, nothing excessive.<br/>Simplicity — respect for the ingredient.<br/>Freshness — seasonality and locality.<br/><br/>Restrained aesthetics with a Russian character.",
+    phil3h: "Private Format",
+    phil3p: "Each evening is individual.<br/>Space, guests, atmosphere —<br/>all become part of the menu’s composition.<br/><br/>Silence of flavor. Attention to detail.",
 
     srv_h: "Services",
     srv1h: "Private Dining",
@@ -206,9 +207,9 @@ const dict = {
     srv2h: "Family Chef",
     srv2p: "Ongoing support for families: weekly planning, sourcing, kitchen setup.",
     srv2l1: "Weekly planning", srv2l2: "Kitchen setup", srv2l3: "Preferences & allergies",
-    srv3h: "VIP Events & Catering",
-    srv3p: "Birthdays, private events, luxury catering with a team.",
-    srv3l1: "Fine dining format", srv3l2: "On-site service", srv3l3: "Event coordination",
+    srv3h: "Private Events",
+    srv3p: "Exclusive receptions and private gatherings. Fine dining format with a service team when required.",
+    srv3l1: "Fine dining format", srv3l2: "On-site service", srv3l3: "Service coordination",
 
     gal_h: "Gallery",
     gal_p: "Selected works — private dining, family chef, VIP events.",
@@ -229,7 +230,7 @@ const dict = {
 
     con_m1k: "Reply",     con_m1v: "usually within 1–2 hours",
     con_m2k: "Location",  con_m2v: "Moscow / Europe",
-    con_m3k: "Format",    con_m3v: "Private Dining • Family Chef • VIP",
+    con_m3k: "Format",    con_m3v: "Private Dining • Family Chef • Private Events",
 
     con_trust_t: "Details",
     con_trust_1: "Confidentiality (NDA on request)",
@@ -261,13 +262,26 @@ const dict = {
 
 function applyLang(next) {
   lang = next;
-  document.documentElement.lang = lang === "ru" ? "ru" : "en";
+
+  // <html lang="ru|en">
+  document.documentElement.lang = (lang === "ru") ? "ru" : "en";
+
+  // text blocks (innerHTML)
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const k = el.getAttribute("data-i18n");
     if (dict[lang][k]) el.innerHTML = dict[lang][k];
   });
-  $("#langBtn").textContent = lang === "ru" ? "EN" : "RU";
+
+  // placeholders (inputs/textarea)
+  document.querySelectorAll("[data-i18n-ph]").forEach(el => {
+    const k = el.getAttribute("data-i18n-ph");
+    if (dict[lang][k]) el.setAttribute("placeholder", dict[lang][k]);
+  });
+
+  // lang button label
+  $("#langBtn").textContent = (lang === "ru") ? "EN" : "RU";
 }
+
 $("#langBtn").addEventListener("click", () => applyLang(lang === "ru" ? "en" : "ru"));
 applyLang("ru");
 
